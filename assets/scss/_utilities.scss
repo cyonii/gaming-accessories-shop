@@ -2,14 +2,14 @@
   line-height: 1;
 }
 
-// color classes
+// color utilities
 @each $name, $color in $color-map {
-  // background color utilities
+  // background color
   .bg-#{$name} {
     background-color: $color !important;
   }
 
-  // text color utilities
+  // text color
   .text-#{$name} {
     color: $color !important;
 
@@ -23,13 +23,29 @@
   }
 }
 
-// font stacks
+// font utilities
+.fs-12 {
+  font-size: 14px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
 .font-gotham {
   font-family: "Gotham", sans-serif;
 }
 
 .font-helvetica {
   font-family: "Helvetica Neue", sans-serif;
+}
+
+.rounded-2 {
+  border-radius: 2px;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
 }
 
 // disallow highlighting / selecting
