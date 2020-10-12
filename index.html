@@ -56,7 +56,47 @@
       </div>
     </nav>
   </header>
+  <div class="jumbotron text-white rounded-0">
+    <div class="container text-center">
+      <h1 class="display-s font-weight-bold text-uppercase">Komrades</h1>
+      <p class="lead">Buy all your gaming equipment and accessories.</p>
+      <form class="form-inline justify-content-center mt-5" action="search.html" method="post">
+        <div class="form-group">
+          <label class="sr-only" for="categories">Categories</label>
+          <select class="custom-select" id="categories">
+            <option value="" selected>All Categories</option>
+            <option value="audio">Audio</option>
+            <option value="video">Video</option>
+            <option value="ar-vr">AR/VR</option>
+            <option value="cpu">CPU</option>
+            <option value="wearables">Wearables</option>
+          </select>
+        </div>
 
+        <div class="form-group">
+          <label class="sr-only" for="q">Categories</label>
+          <input class="form-control" id="q" type="text" placeholder="What do you search for?">
+        </div>
+
+        <div class="form-group">
+          <label class="sr-only" for="location">Location</label>
+          <input class="form-control" id="location" type="text" placeholder="Where?">
+        </div>
+
+        <button class="btn btn-dark" type="submit" name="button">Search</button>
+      </form>
+    </div>
+  </div>
+
+  <main>
+    <section>
+      <h2>HOT ADS</h2>
+
+      <div class="carousel">
+
+      </div>
+    </section>
+  </main>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
