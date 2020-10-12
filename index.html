@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <script src="https://kit.fontawesome.com/016a3b4736.js"></script>
   <title>Gaming Accessories</title>
 </head>
@@ -16,7 +16,7 @@
       <div class="container">
 
         <a class="navbar-brand" href="#">
-          <img src="images/logo.png" alt="logo">
+          <img src="assets/images/logo.png" alt="logo">
         </a>
 
         <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,13 +26,13 @@
         <div class="collapse navbar-collapse align-items-center" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#"><i class="fas fa-home mr-1"></i> Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#"><i class="fas fa-home mr-1"></i>Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-th-large mr-1"></i> Collection</a>
+              <a class="nav-link" href="#"><i class="fas fa-th-large mr-1"></i>Collection</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-shopping-cart mr-1"></i> Purchase List</a>
+              <a class="nav-link" href="#"><i class="fas fa-shopping-cart mr-1"></i>Purchase List</a>
             </li>
             <li class="nav-item">
               <a class="btn btn-primary" href="#" role="button">
@@ -41,14 +41,14 @@
             </li>
           </ul>
 
-          <ul class="navbar-nav align-items-center ml-auto">
+          <ul class="navbar-nav align-items-center ml-auto d-none d-lg-flex">
             <li class="nav-item mr-1">
               <a class="nav-link" href="#"><i class="fas fa-envelope"></i></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
                 CY Onii
-                <img class="user-icon ml-2" src="images/user.jpeg" alt="User">
+                <img class="user-icon ml-2" src="assets/images/user.jpeg" alt="User">
               </a>
             </li>
           </ul>
@@ -56,14 +56,16 @@
       </div>
     </nav>
   </header>
+
+  <!-- Jumbotron hero -->
   <div class="jumbotron text-white rounded-0">
     <div class="container text-center">
       <h1 class="display-s font-weight-bold text-uppercase">Komrades</h1>
       <p class="lead">Buy all your gaming equipment and accessories.</p>
       <form class="form-inline justify-content-center mt-5" action="search.html" method="post">
-        <div class="form-group">
+        <div class="form-group my-1 mr-1">
           <label class="sr-only" for="categories">Categories</label>
-          <select class="custom-select" id="categories">
+          <select class="custom-select border-0" id="categories">
             <option value="" selected>All Categories</option>
             <option value="audio">Audio</option>
             <option value="video">Video</option>
@@ -73,29 +75,122 @@
           </select>
         </div>
 
-        <div class="form-group">
+        <div class="form-group my-1 mr-1">
           <label class="sr-only" for="q">Categories</label>
-          <input class="form-control" id="q" type="text" placeholder="What do you search for?">
+          <input class="form-control border-0" id="q" type="text" placeholder="What do you search for?">
         </div>
 
-        <div class="form-group">
+        <div class="form-group my-1 mr-1">
           <label class="sr-only" for="location">Location</label>
-          <input class="form-control" id="location" type="text" placeholder="Where?">
+          <input class="form-control border-0" id="location" type="text" placeholder="Where?">
         </div>
 
-        <button class="btn btn-dark" type="submit" name="button">Search</button>
+        <button class="btn btn-dark my-1 px-5" type="submit" name="button">Search</button>
       </form>
     </div>
   </div>
 
+  <!-- Main block -->
   <main>
-    <section>
-      <h2>HOT ADS</h2>
+    <!-- Carousel slide section -->
+    <section class="container hot-ads">
+      <h5 class="text-muted">HOT ADS</h5>
 
-      <div class="carousel">
+      <div class="carousel slide d-flex align-items-center" id="hotAds" data-ride="carousel">
+        <a class="carousel-control-prev position-relative bg-dark" href="#hotAds" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card border-0">
+              <div class="row no-gutters justify-content-center">
+                <div class="col-8 col-md-4 d-flex align-items-center justify-items-center">
+                  <img class="card-img-top" src="assets/images/products/638393.jpg" alt="Product #1">
+                </div>
+                <div class="col">
+                  <div class="card-body text-center text-md-left">
+                    <h5><a class="text-primary" href="#">Latest Cool Product (Black Amori)</a></h5>
+                    <p class="card-text font-helvetica">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    </p>
 
+                    <p class="card-text text-muted line-height-1">
+                      By John Doe <br>
+                      Location: New York
+                    </p>
+
+                    <div class="btn-group">
+                      <button class="btn btn-primary" type="button" name="button">$319.99</button>
+                      <button class="btn btn-primary" type="button" name="button"><i class="fas fa-shopping-cart mr-1"></i>Purchase Details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card border-0">
+              <div class="row no-gutters justify-content-center">
+                <div class="col-8 col-md-4 d-flex align-items-center justify-items-center">
+                  <img class="card-img-top" src="assets/images/products/638393.jpg" alt="Product #1">
+                </div>
+                <div class="col">
+                  <div class="card-body text-center text-md-left">
+                    <h5><a class="text-primary" href="#">Latest Cool Product (Black Amori)</a></h5>
+                    <p class="card-text font-helvetica">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    </p>
+
+                    <p class="card-text text-muted line-height-1">
+                      By John Doe <br>
+                      Location: New York
+                    </p>
+
+                    <div class="btn-group">
+                      <button class="btn btn-primary" type="button" name="button">$319.99</button>
+                      <button class="btn btn-primary" type="button" name="button"><i class="fas fa-shopping-cart mr-1"></i>Purchase Details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card border-0">
+              <div class="row no-gutters justify-content-center">
+                <div class="col-8 col-md-4 d-flex align-items-center justify-items-center">
+                  <img class="card-img-top" src="assets/images/products/638393.jpg" alt="Product #1">
+                </div>
+                <div class="col">
+                  <div class="card-body text-center text-md-left">
+                    <h5><a class="text-primary" href="#">Latest Cool Product (Black Amori)</a></h5>
+                    <p class="card-text font-helvetica">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    </p>
+
+                    <p class="card-text text-muted line-height-1">
+                      By John Doe <br>
+                      Location: New York
+                    </p>
+
+                    <div class="btn-group">
+                      <button class="btn btn-primary" type="button" name="button">$319.99</button>
+                      <button class="btn btn-primary" type="button" name="button"><i class="fas fa-shopping-cart mr-1"></i>Purchase Details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-next position-relative bg-dark" href="#hotAds" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </section>
+
   </main>
 
   <!-- Optional JavaScript -->

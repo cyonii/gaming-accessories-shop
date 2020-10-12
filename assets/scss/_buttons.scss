@@ -1,6 +1,3 @@
-@import "colors";
-@import "config";
-
 .btn-primary {
   @include set-background($color-primary);
   border-color: darken($color-primary, 2%);

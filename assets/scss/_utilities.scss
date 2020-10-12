@@ -1,0 +1,55 @@
+.lh-1 {
+  line-height: 1;
+}
+
+// color classes
+@each $name, $color in $color-map {
+  // background color utilities
+  .bg-#{$name} {
+    background-color: $color !important;
+  }
+
+  // text color utilities
+  .text-#{$name} {
+    color: $color !important;
+
+    &:hover {
+      color: $color !important;
+    }
+  }
+
+  .btn-#{$name} {
+    background-color: $color;
+  }
+}
+
+// font stacks
+.font-gotham {
+  font-family: "Gotham", sans-serif;
+}
+
+.font-helvetica {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+// disallow highlighting / selecting
+@mixin user-select-disallowed {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+// set text color based on background
+@function set-text-color($color) {
+  @if (lightness($color) > 70) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+// mixin set background
+@mixin set-background($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}

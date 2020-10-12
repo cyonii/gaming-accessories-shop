@@ -1,6 +1,23 @@
 @import "config";
-@import "colors";
+@import "utilities";
 @import "buttons";
+
+a {
+  color: #000;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
 
 .navbar {
   &-brand img {
@@ -20,4 +37,13 @@
 
 .jumbotron {
   background-image: linear-gradient(170deg, lighten($color-primary, 10%) 40%, lighten($color-primary, 5%) 40%);
+}
+
+.hot-ads {
+  a[class^="carousel-control"] {
+    width: auto;
+    padding: 0.75rem;
+    border: 2px solid darken($color-primary, 50%);
+    border-radius: 50%;
+  }
 }

@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Gotham";
+  font-weight: bold;
+  src: url("../fonts/Gotham/Gotham-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gotham";
+  font-weight: lighter;
+  src: url("../fonts/Gotham/GothamRnd-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-weight: bold;
+  src: url("../fonts/Helvetica/HelveticaNeueLTStd-Bd.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-weight: normal;
+  src: url("../fonts/Helvetica/HelveticaNeueLTStd-Md.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-weight: lighter;
+  src: url("../fonts/Helvetica/HelveticaNeueLTStd-Th.otf") format("opentype");
+}
+
+body {
+  font-family: "Gotham", sans-serif;
+}
+
+$color-primary: #d35266;
+$color-muted: #888;
+$color-dark: #383838;
+$color-map: (
+  "primary": $color-primary,
+  "muted": $color-muted,
+  "dark": $color-dark
+);
+$_1: 0.25rem;
+$_2: 0.5rem;
+$_3: 0.75rem;
+$_4: 1rem;
+$_5: 1.5rem;
+$rounded-edgy: 2px;
+$rounded-sm: $_2;

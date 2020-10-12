@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "Gotham";
+  font-weight: bold;
+  src: url("../fonts/Gotham/Gotham-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Gotham";
+  font-weight: lighter;
+  src: url("../fonts/Gotham/GothamRnd-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  font-weight: bold;
+  src: url("../fonts/Helvetica/HelveticaNeueLTStd-Bd.otf") format("opentype");
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  font-weight: normal;
+  src: url("../fonts/Helvetica/HelveticaNeueLTStd-Md.otf") format("opentype");
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  font-weight: lighter;
+  src: url("../fonts/Helvetica/HelveticaNeueLTStd-Th.otf") format("opentype");
+}
+body {
+  font-family: "Gotham", sans-serif;
+}
+
+.lh-1 {
+  line-height: 1;
+}
+
+.bg-primary {
+  background-color: #d35266 !important;
+}
+
+.text-primary {
+  color: #d35266 !important;
+}
+.text-primary:hover {
+  color: #d35266 !important;
+}
+
+.btn-primary {
+  background-color: #d35266;
+}
+
+.bg-muted {
+  background-color: #888 !important;
+}
+
+.text-muted {
+  color: #888 !important;
+}
+.text-muted:hover {
+  color: #888 !important;
+}
+
+.btn-muted {
+  background-color: #888;
+}
+
+.bg-dark {
+  background-color: #383838 !important;
+}
+
+.text-dark {
+  color: #383838 !important;
+}
+.text-dark:hover {
+  color: #383838 !important;
+}
+
+.btn-dark {
+  background-color: #383838;
+}
+
+.font-gotham {
+  font-family: "Gotham", sans-serif;
+}
+
+.font-helvetica {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.btn-primary {
+  background-color: #d35266;
+  color: #fff;
+  border-color: #d14a5f;
+  border-width: 2px;
+}
+.btn-primary:hover {
+  background-color: #d35266;
+  color: #fff;
+  border-color: #d14a5f;
+  opacity: 0.9;
+}
+
+a {
+  color: #000;
+}
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+.navbar-brand img {
+  width: 140px;
+}
+.navbar .nav-item.active .nav-link {
+  color: #d35266;
+}
+.navbar .user-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.jumbotron {
+  background-image: linear-gradient(170deg, #dd7b8a 40%, #d86678 40%);
+}
+
+.hot-ads a[class^=carousel-control] {
+  width: auto;
+  padding: 0.75rem;
+  border: 2px solid #1e080b;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */
