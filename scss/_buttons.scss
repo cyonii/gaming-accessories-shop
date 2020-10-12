@@ -1,0 +1,14 @@
+@import "colors";
+@import "config";
+
+.btn-primary {
+  @include set-background($color-primary);
+  border-color: darken($color-primary, 2%);
+  border-width: 2px;
+
+  &:hover {
+    @include set-background($color-primary);
+    border-color: darken($color-primary, 2%);
+    opacity: 0.9;
+  }
+}

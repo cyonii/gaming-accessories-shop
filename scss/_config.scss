@@ -1,0 +1,29 @@
+$_1: 0.25rem;
+$_2: 0.5rem;
+$_3: 0.75rem;
+$_4: 1rem;
+$_5: 1.5rem;
+$rounded-edgy: 2px;
+$rounded-sm: $_2;
+
+// Disallow highlighting / selecting
+@mixin user-select-disallowed {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+// Set text color based on background
+@function set-text-color($color) {
+  @if (lightness($color) > 70) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+// Mixin set background
+@mixin set-background($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}

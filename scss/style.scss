@@ -1,0 +1,19 @@
+@import "config";
+@import "colors";
+@import "buttons";
+
+.navbar {
+  &-brand img {
+    width: 140px;
+  }
+
+  .nav-item.active .nav-link {
+    color: $color-primary;
+  }
+
+  .user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+}
