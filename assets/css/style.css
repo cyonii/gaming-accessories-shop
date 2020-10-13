@@ -5,7 +5,7 @@
 }
 @font-face {
   font-family: "Gotham Round";
-  font-weight: 300;
+  font-weight: lighter;
   src: url("../fonts/Gotham/GothamRnd-Light.otf") format("opentype");
 }
 @font-face {
@@ -83,6 +83,14 @@ body {
 
 .fs-14 {
   font-size: 14px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-22 {
+  font-size: 22px;
 }
 
 .font-gotham {
@@ -172,6 +180,15 @@ h6 {
   padding: 0.75rem;
   border: 2px solid #1e080b;
   border-radius: 50%;
+}
+
+[class^=col] {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.search-result-card:hover .give-a-call {
+  display: inline-block !important;
 }
 
 footer .footer-img {

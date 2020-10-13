@@ -58,6 +58,21 @@ h6 {
   }
 }
 
+// Reduce padding on all columns
+[class^="col"] {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+// Products card in search results
+.search-result-card {
+  &:hover {
+    .give-a-call {
+      display: inline-block !important;
+    }
+  }
+}
+
 footer {
   .footer-img {
     width: 160px;
