@@ -4,8 +4,8 @@
   src: url("../fonts/Gotham/Gotham-Bold.otf") format("opentype");
 }
 @font-face {
-  font-family: "Gotham";
-  font-weight: lighter;
+  font-family: "Gotham Round";
+  font-weight: 300;
   src: url("../fonts/Gotham/GothamRnd-Light.otf") format("opentype");
 }
 @font-face {
@@ -15,16 +15,17 @@
 }
 @font-face {
   font-family: "Helvetica Neue";
-  font-weight: normal;
-  src: url("../fonts/Helvetica/HelveticaNeueLTStd-Md.otf") format("opentype");
+  font-weight: 400;
+  src: url("../fonts/Helvetica/HelveticaNeueLTStd-Roman.otf") format("opentype");
 }
 @font-face {
   font-family: "Helvetica Neue";
-  font-weight: lighter;
+  font-weight: thin;
   src: url("../fonts/Helvetica/HelveticaNeueLTStd-Th.otf") format("opentype");
 }
 body {
-  font-family: "Gotham", sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
+  background: #eee;
 }
 
 .lh-1 {
@@ -92,12 +93,23 @@ body {
   font-family: "Helvetica Neue", sans-serif;
 }
 
+.border-2 {
+  border-width: 2px !important;
+}
+
+.border-primary {
+  border-color: #d35266 !important;
+}
+
 .rounded-2 {
   border-radius: 2px;
 }
 
 .overflow-x-scroll {
   overflow-x: scroll;
+}
+.overflow-x-scroll::-webkit-scrollbar {
+  display: none;
 }
 
 .btn-primary {
@@ -130,7 +142,7 @@ h6 {
 }
 
 .navbar-brand img {
-  width: 140px;
+  width: 160px;
 }
 .navbar .nav-item.active .nav-link {
   color: #d35266;
@@ -139,6 +151,16 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+}
+
+.dropup .dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-item:active,
+.dropdown-item:hover {
+  background-color: #383838 !important;
+  color: #fff;
 }
 
 .jumbotron {
@@ -150,6 +172,10 @@ h6 {
   padding: 0.75rem;
   border: 2px solid #1e080b;
   border-radius: 50%;
+}
+
+footer .footer-img {
+  width: 160px;
 }
 
 /*# sourceMappingURL=style.css.map */

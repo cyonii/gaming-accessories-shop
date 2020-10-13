@@ -21,10 +21,9 @@
 
         <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-          <!-- <i class="fas fa-bars"></i> -->
         </button>
-        <div class="collapse navbar-collapse align-items-center" id="navbarNavDropdown">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav align-items-md-center">
             <li class="nav-item active">
               <a class="nav-link" href="#"><i class="fas fa-home mr-1"></i>Home<span class="sr-only">(current)</span></a>
             </li>
@@ -35,7 +34,7 @@
               <a class="nav-link" href="#"><i class="fas fa-shopping-cart mr-1"></i>Purchase List</a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-primary" href="#" role="button">
+              <a class="btn btn-primary rounded-2 fs-14" href="#" role="button">
                 <strong>POST AN AD</strong>
               </a>
             </li>
@@ -43,7 +42,7 @@
 
           <ul class="navbar-nav align-items-center ml-auto d-none d-lg-flex">
             <li class="nav-item mr-1">
-              <a class="nav-link" href="#"><i class="fas fa-envelope"></i></a>
+              <a class="nav-link lh-1" href="#"><i class="fas fa-envelope"></i></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
@@ -58,7 +57,7 @@
   </header>
 
   <!-- Jumbotron hero -->
-  <div class="jumbotron text-white rounded-0">
+  <div class="jumbotron text-white rounded-0 mb-0">
     <div class="container text-center">
       <h1 class="display-s font-weight-bold text-uppercase">Komrades</h1>
       <p class="lead">Buy all your gaming equipment and accessories.</p>
@@ -85,7 +84,7 @@
           <input class="form-control shadow-sm border-0" id="location" type="text" placeholder="Where?">
         </div>
 
-        <button class="btn btn-dark my-1 px-5" type="submit" name="button">Search</button>
+        <button class="btn btn-dark my-1 px-5 shadow" type="submit" name="button">Search</button>
       </form>
     </div>
   </div>
@@ -93,223 +92,286 @@
   <!-- Main block -->
   <main>
     <!-- Carousel slide section -->
-    <section class="container hot-ads">
-      <h5 class="text-muted">HOT ADS</h5>
+    <section class="container-fluid bg-white hot-ads py-5">
+      <div class="container">
+        <h5 class="text-muted">HOT ADS</h5>
 
-      <div class="carousel slide d-flex align-items-center" id="hotAds" data-ride="carousel">
-        <a class="carousel-control-prev position-relative bg-dark" href="#hotAds" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="card border-0">
-              <div class="row no-gutters justify-content-center">
-                <div class="col-8 col-md-4 d-flex align-items-center justify-items-center">
-                  <img class="card-img-top" src="assets/images/products/638393.jpg" alt="Product #1">
+        <div class="carousel slide d-flex align-items-center" id="hotAds" data-ride="carousel">
+          <a class="carousel-control-prev position-relative bg-dark d-none d-sm-inline-flex" href="#hotAds" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card border-0">
+                <div class="row no-gutters justify-content-center">
+                  <div class="col-8 col-md-4 d-flex align-items-center justify-items-center">
+                    <img class="card-img-top" src="assets/images/products/638393.jpg" alt="Product #1">
+                  </div>
+                  <div class="col">
+                    <div class="card-body p-0 p-md-3 text-center text-md-left">
+                      <h5><a class="text-primary" href="#">Gaming Pad Razer Raiju Ultimate Controller</a></h5>
+                      <p class="card-text font-helvetica">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                      </p>
+
+                      <p class="card-text text-muted line-height-1">
+                        By Fred Zoro <br>
+                        Location: New York
+                      </p>
+
+                      <div class="btn-group">
+                        <button class="btn btn-primary" type="button" name="button">$319.99</button>
+                        <button class="btn btn-primary" type="button" name="button"><i class="fas fa-shopping-cart mr-1"></i>Purchase Details</button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col">
-                  <div class="card-body text-center text-md-left">
-                    <h5><a class="text-primary" href="#">Latest Cool Product (Black Amori)</a></h5>
-                    <p class="card-text font-helvetica">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card border-0">
+                <div class="row no-gutters justify-content-center">
+                  <div class="col-8 col-md-4 d-flex align-items-center justify-items-center">
+                    <img class="card-img-top" src="assets/images/products/mouse-slide.jpg" alt="Product #1">
+                  </div>
+                  <div class="col">
+                    <div class="card-body p-0 p-md-3 text-center text-md-left">
+                      <h5>
+                        <a class="text-primary" href="#">
+                          Logitech g403 Hero Wired Gaming Mouse
+                        </a>
+                      </h5>
+                      <p class="card-text font-helvetica">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                      </p>
 
-                    <p class="card-text text-muted line-height-1">
-                      By John Doe <br>
-                      Location: New York
-                    </p>
+                      <p class="card-text text-muted line-height-1">
+                        By Ryan Kings <br>
+                        Location: San Diego
+                      </p>
 
-                    <div class="btn-group">
-                      <button class="btn btn-primary" type="button" name="button">$319.99</button>
-                      <button class="btn btn-primary" type="button" name="button"><i class="fas fa-shopping-cart mr-1"></i>Purchase Details</button>
+                      <div class="btn-group">
+                        <button class="btn btn-primary" type="button" name="button">$249.99</button>
+                        <button class="btn btn-primary" type="button" name="button"><i class="fas fa-shopping-cart mr-1"></i>Purchase Details</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card border-0">
+                <div class="row no-gutters justify-content-center">
+                  <div class="col-8 col-md-4 d-flex align-items-center justify-items-center">
+                    <img class="card-img-top" src="assets/images/products/speaker-slide.jpg" alt="Product #1">
+                  </div>
+                  <div class="col">
+                    <div class="card-body p-0 p-md-3 text-center text-md-left">
+                      <h5><a class="text-primary" href="#">Razer Nommo Pro 2. 1 Gaming Speaker</a></h5>
+                      <p class="card-text font-helvetica">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                      </p>
+
+                      <p class="card-text text-muted line-height-1">
+                        By Jermain Doe <br>
+                        Location: Miami, Florida
+                      </p>
+
+                      <div class="btn-group">
+                        <button class="btn btn-primary" type="button" name="button">$399.99</button>
+                        <button class="btn btn-primary" type="button" name="button"><i class="fas fa-shopping-cart mr-1"></i>Purchase Details</button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="card border-0">
-              <div class="row no-gutters justify-content-center">
-                <div class="col-8 col-md-4 d-flex align-items-center justify-items-center">
-                  <img class="card-img-top" src="assets/images/products/638393.jpg" alt="Product #1">
-                </div>
-                <div class="col">
-                  <div class="card-body text-center text-md-left">
-                    <h5><a class="text-primary" href="#">Latest Cool Product (Black Amori)</a></h5>
-                    <p class="card-text font-helvetica">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    </p>
-
-                    <p class="card-text text-muted line-height-1">
-                      By John Doe <br>
-                      Location: New York
-                    </p>
-
-                    <div class="btn-group">
-                      <button class="btn btn-primary" type="button" name="button">$319.99</button>
-                      <button class="btn btn-primary" type="button" name="button"><i class="fas fa-shopping-cart mr-1"></i>Purchase Details</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card border-0">
-              <div class="row no-gutters justify-content-center">
-                <div class="col-8 col-md-4 d-flex align-items-center justify-items-center">
-                  <img class="card-img-top" src="assets/images/products/638393.jpg" alt="Product #1">
-                </div>
-                <div class="col">
-                  <div class="card-body text-center text-md-left">
-                    <h5><a class="text-primary" href="#">Latest Cool Product (Black Amori)</a></h5>
-                    <p class="card-text font-helvetica">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    </p>
-
-                    <p class="card-text text-muted line-height-1">
-                      By John Doe <br>
-                      Location: New York
-                    </p>
-
-                    <div class="btn-group">
-                      <button class="btn btn-primary" type="button" name="button">$319.99</button>
-                      <button class="btn btn-primary" type="button" name="button"><i class="fas fa-shopping-cart mr-1"></i>Purchase Details</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <a class="carousel-control-next position-relative bg-dark d-none d-sm-inline-flex" href="#hotAds" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-        <a class="carousel-control-next position-relative bg-dark" href="#hotAds" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
     </section>
 
     <!-- Audio categories section -->
-    <section class="container pt-5 mt-5">
+    <section class="container pt-5">
       <div class="section-header d-flex justify-content-between align-items-center">
         <h5 class="text-muted m-0">
-          Audio <i class="fas fa-headset"></i>
+          <i class="fas fa-headset"></i>&nbsp;Audio
           <span class="font-weight-light font-helvetica ml-2 fs-12">(Headsets, Speakers, Earpieces, and Microphones)</span>
         </h5>
         <a class="text-primary fs-14" href="#">View all</a>
       </div>
       <hr>
-      <div class="row flex-nowrap overflow-x-scroll py-2">
+      <div class="row flex-nowrap overflow-x-scroll py-4">
         <div class="col-6 col-md-4 col-lg-3">
-          <div class="card border-0 shadow rounded-2">
+          <div class="card h-100 border-0 shadow rounded-2">
             <div class="card-body">
               <img class="img-fluid" src="/assets/images/products/headset-1.jpg" alt="Headset">
 
-              <h6 class="card-title mt-2 mb-0 lh-1"><a href="#">Headset impro XD45 - Black Diamond</a></h6>
-              <strong class="text-danger">New</strong>
-              <p class="card-text fs-14 font-weight-bold text-muted mt-3 mb-2">From: San Francisco</p>
+              <h6 class="card-title mt-2 mb-0 lh-1"><a class="card-link text-dark" href="#">Kraken Ultimate Gaming Headset - Black</a></h6>
+              <strong class="text-danger">Used</strong>
+              <p class="card-text fs-14 font-weight-bold text-muted mt-3 mb-2">From: Lagos</p>
 
               <div class="d-flex justify-content-between align-items-center">
-                <button class="btn border rounded-2 py-1 px-3" type="button" name="button"><i class="far fa-plus-square"></i></button>
+                <!-- dropup button -->
+                <div class="dropup">
+                  <button class="btn btn-light dropdown-toggle border rounded-2 py-0 px-2" type="button" name="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <svg width="30px" height="30px" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                    </svg>
+                  </button>
+                  <div class="dropdown-menu shadow-sm rounded-2 font-helvetica">
+                    <a class="dropdown-item" href="#">Add to Collection</a>
+                    <a class="dropdown-item" href="#">Send a message</a>
+                    <a class="dropdown-item" href="#">More Details</a>
+                  </div>
+                </div>
+
+                <strong class="text-danger">$449.99</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100 border-0 shadow rounded-2">
+            <div class="card-body">
+              <img class="img-fluid" src="/assets/images/products/earpiece-1.jpg" alt="Headset">
+
+              <h6 class="card-title mt-2 mb-0 lh-1"><a class="card-link text-dark" href="#">Razer Hammerhead V2 Gaming Eearpiece - RZ12</a></h6>
+              <strong class="text-danger">New</strong>
+              <p class="card-text fs-14 font-weight-bold text-muted mt-3 mb-2">From: Dublin, Ireland</p>
+
+              <div class="d-flex justify-content-between align-items-center">
+                <!-- dropup button -->
+                <div class="dropup">
+                  <button class="btn btn-light dropdown-toggle border rounded-2 py-0 px-2" type="button" name="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <svg width="30px" height="30px" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                    </svg>
+                  </button>
+                  <div class="dropdown-menu shadow-sm rounded-2 font-helvetica">
+                    <a class="dropdown-item" href="#">Add to Collection</a>
+                    <a class="dropdown-item" href="#">Send a message</a>
+                    <a class="dropdown-item" href="#">More Details</a>
+                  </div>
+                </div>
+                <strong class="text-danger">$199.99</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100 border-0 shadow rounded-2">
+            <div class="card-body">
+              <img class="img-fluid" src="/assets/images/products/speaker-1.jpg" alt="Headset">
+
+              <h6 class="card-title mt-2 mb-0 lh-1"><a class="card-link text-dark" href="#">Razer Nommo Chroma - Gaming Speakers</a></h6>
+              <strong class="text-danger">New</strong>
+              <p class="card-text fs-14 font-weight-bold text-muted mt-3 mb-2">From: Hong Kong</p>
+
+              <div class="d-flex justify-content-between align-items-center">
+                <!-- dropup button -->
+                <div class="dropup">
+                  <button class="btn btn-light dropdown-toggle border rounded-2 py-0 px-2" type="button" name="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <svg width="30px" height="30px" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                    </svg>
+                  </button>
+                  <div class="dropdown-menu shadow-sm rounded-2 font-helvetica">
+                    <a class="dropdown-item" href="#">Add to Collection</a>
+                    <a class="dropdown-item" href="#">Send a message</a>
+                    <a class="dropdown-item" href="#">More Details</a>
+                  </div>
+                </div>
                 <strong class="text-danger">$450</strong>
               </div>
             </div>
           </div>
         </div>
         <div class="col-6 col-md-4 col-lg-3">
-          <div class="card border-0 shadow rounded-2">
+          <div class="card h-100 border-0 shadow rounded-2">
             <div class="card-body">
-              <img class="img-fluid" src="/assets/images/products/headset-1.jpg" alt="Headset">
+              <img class="img-fluid" src="/assets/images/products/earpiece-2.jpg" alt="Headset">
 
-              <h6 class="card-title mt-2 mb-0 lh-1"><a href="#">Headset impro XD45 - Black Diamond</a></h6>
-              <strong class="text-danger">New</strong>
-              <p class="card-text fs-14 font-weight-bold text-muted mt-3 mb-2">From: San Francisco</p>
+              <h6 class="card-title mt-2 mb-0 lh-1"><a class="card-link text-dark" href="#">Razer Hammerhead V2 Gaming Eearpiece - RZ44</a></h6>
+              <strong class="text-danger">Refurbished</strong>
+              <p class="card-text fs-14 font-weight-bold text-muted mt-3 mb-2">From: Honolulu</p>
 
               <div class="d-flex justify-content-between align-items-center">
-                <button class="btn border rounded-2 py-1 px-3" type="button" name="button"><i class="far fa-plus-square"></i></button>
-                <strong class="text-danger">$450</strong>
+                <!-- dropup button -->
+                <div class="dropup">
+                  <button class="btn btn-light dropdown-toggle border rounded-2 py-0 px-2" type="button" name="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <svg width="30px" height="30px" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                    </svg>
+                  </button>
+                  <div class="dropdown-menu shadow-sm rounded-2 font-helvetica">
+                    <a class="dropdown-item" href="#">Add to Collection</a>
+                    <a class="dropdown-item" href="#">Send a message</a>
+                    <a class="dropdown-item" href="#">More Details</a>
+                  </div>
+                </div>
+                <strong class="text-danger">$219.99</strong>
               </div>
             </div>
           </div>
         </div>
         <div class="col-6 col-md-4 col-lg-3">
-          <div class="card border-0 shadow rounded-2">
+          <div class="card h-100 border-0 shadow rounded-2">
             <div class="card-body">
-              <img class="img-fluid" src="/assets/images/products/headset-1.jpg" alt="Headset">
+              <img class="img-fluid" src="/assets/images/products/headset-2.jpg" alt="Headset">
 
-              <h6 class="card-title mt-2 mb-0 lh-1"><a href="#">Headset impro XD45 - Black Diamond</a></h6>
-              <strong class="text-danger">New</strong>
-              <p class="card-text fs-14 font-weight-bold text-muted mt-3 mb-2">From: San Francisco</p>
+              <h6 class="card-title mt-2 mb-0 lh-1"><a class="card-link text-dark" href="#">Razer Tetra Headset - Cardioid Microphone</a></h6>
+              <strong class="text-danger">Used</strong>
+              <p class="card-text fs-14 font-weight-bold text-muted mt-3 mb-2">From: St. Petersburg</p>
 
               <div class="d-flex justify-content-between align-items-center">
-                <button class="btn border rounded-2 py-1 px-3" type="button" name="button"><i class="far fa-plus-square"></i></button>
-                <strong class="text-danger">$450</strong>
+                <!-- dropup button -->
+                <div class="dropup">
+                  <button class="btn btn-light dropdown-toggle border rounded-2 py-0 px-2" type="button" name="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <svg width="30px" height="30px" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                    </svg>
+                  </button>
+                  <div class="dropdown-menu shadow-sm rounded-2 font-helvetica">
+                    <a class="dropdown-item" href="#">Add to Collection</a>
+                    <a class="dropdown-item" href="#">Send a message</a>
+                    <a class="dropdown-item" href="#">More Details</a>
+                  </div>
+                </div>
+                <strong class="text-danger">$99.99</strong>
               </div>
             </div>
           </div>
         </div>
         <div class="col-6 col-md-4 col-lg-3">
-          <div class="card border-0 shadow rounded-2">
+          <div class="card h-100 border-0 shadow rounded-2">
             <div class="card-body">
-              <img class="img-fluid" src="/assets/images/products/headset-1.jpg" alt="Headset">
+              <img class="img-fluid" src="/assets/images/products/speaker-2.jpg" alt="Headset">
 
-              <h6 class="card-title mt-2 mb-0 lh-1"><a href="#">Headset impro XD45 - Black Diamond</a></h6>
+              <h6 class="card-title mt-2 mb-0 lh-1"><a class="card-link text-dark" href="#">Razer Leviathan Mini Bluetooth Speaker</a></h6>
               <strong class="text-danger">New</strong>
               <p class="card-text fs-14 font-weight-bold text-muted mt-3 mb-2">From: San Francisco</p>
 
               <div class="d-flex justify-content-between align-items-center">
-                <button class="btn border rounded-2 py-1 px-3" type="button" name="button"><i class="far fa-plus-square"></i></button>
-                <strong class="text-danger">$450</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="card border-0 shadow rounded-2">
-            <div class="card-body">
-              <img class="img-fluid" src="/assets/images/products/headset-1.jpg" alt="Headset">
-
-              <h6 class="card-title mt-2 mb-0 lh-1"><a href="#">Headset impro XD45 - Black Diamond</a></h6>
-              <strong class="text-danger">New</strong>
-              <p class="card-text fs-14 font-weight-bold text-muted mt-3 mb-2">From: San Francisco</p>
-
-              <div class="d-flex justify-content-between align-items-center">
-                <button class="btn border rounded-2 py-1 px-3" type="button" name="button"><i class="far fa-plus-square"></i></button>
-                <strong class="text-danger">$450</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="card border-0 shadow rounded-2">
-            <div class="card-body">
-              <img class="img-fluid" src="/assets/images/products/headset-1.jpg" alt="Headset">
-
-              <h6 class="card-title mt-2 mb-0 lh-1"><a href="#">Headset impro XD45 - Black Diamond</a></h6>
-              <strong class="text-danger">New</strong>
-              <p class="card-text fs-14 font-weight-bold text-muted mt-3 mb-2">From: San Francisco</p>
-
-              <div class="d-flex justify-content-between align-items-center">
-                <button class="btn border rounded-2 py-1 px-3" type="button" name="button"><i class="far fa-plus-square"></i></button>
-                <strong class="text-danger">$450</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="card border-0 shadow rounded-2">
-            <div class="card-body">
-              <img class="img-fluid" src="/assets/images/products/headset-1.jpg" alt="Headset">
-
-              <h6 class="card-title mt-2 mb-0 lh-1"><a href="#">Headset impro XD45 - Black Diamond</a></h6>
-              <strong class="text-danger">New</strong>
-              <p class="card-text fs-14 font-weight-bold text-muted mt-3 mb-2">From: San Francisco</p>
-
-              <div class="d-flex justify-content-between align-items-center">
-                <button class="btn border rounded-2 py-1 px-3" type="button" name="button"><i class="far fa-plus-square"></i></button>
-                <strong class="text-danger">$450</strong>
+                <!-- dropup button -->
+                <div class="dropup">
+                  <button class="btn btn-light dropdown-toggle border rounded-2 py-0 px-2" type="button" name="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <svg width="30px" height="30px" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                    </svg>
+                  </button>
+                  <div class="dropdown-menu shadow-sm rounded-2 font-helvetica">
+                    <a class="dropdown-item" href="#">Add to Collection</a>
+                    <a class="dropdown-item" href="#">Send a message</a>
+                    <a class="dropdown-item" href="#">More Details</a>
+                  </div>
+                </div>
+                <strong class="text-danger">$329.99</strong>
               </div>
             </div>
           </div>

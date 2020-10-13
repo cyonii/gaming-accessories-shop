@@ -40,12 +40,24 @@
   font-family: "Helvetica Neue", sans-serif;
 }
 
+.border-2 {
+  border-width: 2px !important;
+}
+
+.border-primary {
+  border-color: $color-primary !important;
+}
+
 .rounded-2 {
   border-radius: 2px;
 }
 
 .overflow-x-scroll {
   overflow-x: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 // disallow highlighting / selecting
