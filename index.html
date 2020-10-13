@@ -15,8 +15,8 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
       <div class="container">
 
-        <a class="navbar-brand" href="#">
-          <img src="assets/images/logo.png" alt="logo">
+        <a class="navbar-brand" href="index.html">
+          <img src="/assets/images/logo.png" alt="logo">
         </a>
 
         <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +47,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#">
                 CY Onii
-                <img class="user-icon ml-2" src="assets/images/user.jpeg" alt="User">
+                <img class="user-icon ml-2" src="/assets/images/user.jpeg" alt="User">
               </a>
             </li>
           </ul>
@@ -57,14 +57,14 @@
   </header>
 
   <!-- Jumbotron hero -->
-  <div class="jumbotron text-white rounded-0 mb-0">
-    <div class="container text-center">
+  <div class="jumbotron text-center text-white rounded-0 mb-0">
+    <div class="container">
       <h1 class="display-s font-weight-bold text-uppercase">Komrades</h1>
       <p class="lead">Buy all your gaming equipment and accessories.</p>
-      <form class="form-inline justify-content-center mt-5" action="search.html" method="post">
+      <form class="form-inline justify-content-center mt-5" action="/search.html" method="post">
         <div class="form-group my-1 mr-1">
           <label class="sr-only" for="categories">Categories</label>
-          <select class="custom-select shadow-sm border-0" id="categories">
+          <select class="custom-select custom-select-lg shadow-sm border-0" id="categories">
             <option value="" selected>All Categories</option>
             <option value="audio">Audio</option>
             <option value="video">Video</option>
@@ -76,15 +76,15 @@
 
         <div class="form-group my-1 mr-1">
           <label class="sr-only" for="q">Categories</label>
-          <input class="form-control shadow-sm border-0" id="q" type="text" placeholder="What do you search for?">
+          <input class="form-control form-control-lg shadow-sm border-0" id="q" type="text" placeholder="What do you search for?">
         </div>
 
         <div class="form-group my-1 mr-1">
           <label class="sr-only" for="location">Location</label>
-          <input class="form-control shadow-sm border-0" id="location" type="text" placeholder="Where?">
+          <input class="form-control form-control-lg shadow-sm border-0" id="location" type="text" placeholder="Where?">
         </div>
 
-        <button class="btn btn-dark my-1 px-5 shadow" type="submit" name="button">Search</button>
+        <button class="btn btn-dark btn-lg my-1 px-5 shadow" type="submit" name="button">Search</button>
       </form>
     </div>
   </div>
@@ -382,28 +382,76 @@
 
   <footer class="bg-white border-top border-2 py-5 mt-5">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-4">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-3">
           <img class="footer-img mb-3 d-flex mx-auto" class="img-fluid" src="/assets/images/logo-grey.png" alt="Grey logo">
-          <p class="lh-1 font-weight-normal text-muted">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          <p class="font-weight-normal text-muted">
+            Komrades Inc. is your number one plug for modern and futuristic gaming accessories for pro and casual gaming.
+            We design, produce, and sell all sorts of gaming equipment and accessories.
           </p>
         </div>
 
-        <div class="col-md-4">
-          <h5 class="text-primary border-bottom border-2 border-primary">
+        <div class="col-md-3">
+          <h6 class="text-primary border-bottom border-2 border-primary">
             CATEGORIES
-          </h5>
+          </h6>
 
           <ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-item" href="#">Laptops</a></li>
-            <li class="nav-item"><a class="nav-item" href="#">Audio</a></li>
-            <li class="nav-item"><a class="nav-item" href="#">Monitors</a></li>
-            <li class="nav-item"><a class="nav-item" href="#">Keyboards</a></li>
-            <li class="nav-item"><a class="nav-item" href="#">AR/VR</a></li>
-            <li class="nav-item"><a class="nav-item" href="#">eGPUs</a></li>
-            <li class="nav-item"><a class="nav-item" href="#">CPU</a></li>
+            <li class="nav-item"><a class="nav-item text-dark" href="#">Laptops</a></li>
+            <li class="nav-item"><a class="nav-item text-dark" href="#">Audio</a></li>
+            <li class="nav-item"><a class="nav-item text-dark" href="#">Monitors</a></li>
+            <li class="nav-item"><a class="nav-item text-dark" href="#">Keyboards</a></li>
+            <li class="nav-item"><a class="nav-item text-dark" href="#">AR/VR</a></li>
+            <li class="nav-item"><a class="nav-item text-dark" href="#">eGPUs</a></li>
+            <li class="nav-item"><a class="nav-item text-dark" href="#">CPU</a></li>
           </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h6 class="text-primary border-bottom border-2 border-primary">
+            NAVIGATION
+          </h6>
+
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-item text-dark" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-item text-dark" href="#">Sign In</a></li>
+            <li class="nav-item"><a class="nav-item text-dark" href="#">Sign Up</a></li>
+            <li class="nav-item"><a class="nav-item text-dark" href="#">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-item text-dark" href="#">Terms & Conditions</a></li>
+            <li class="nav-item"><a class="nav-item text-dark" href="#">Help</a></li>
+            <li class="nav-item"><a class="nav-item text-dark" href="#">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <div class="container font-gotham">
+            <div class="d-flex align-items-center mb-2">
+              <strong class="text-primary mr-3">COUNTRY</strong>
+              <select class="custom-select custom-select-sm border-secondary fs-16 lh-1" name="country">
+                <option value="us">US</option>
+                <option value="canada">Canada</option>
+                <option value="nigeria">Nigeria</option>
+              </select>
+            </div>
+            <div class="d-flex align-items-center mb-2">
+              <strong class="text-primary mr-3">LANGUAGE</strong>
+              <select class="custom-select custom-select-sm border-secondary fs-16 lh-1" name="country">
+                <option value="english">English</option>
+                <option value="italian">Italy</option>
+                <option value="spainish">Spanish</option>
+                <option value="polish">Polish</option>
+              </select>
+            </div>
+            <div class="d-flex align-items-center">
+              <strong class="text-primary mr-3">CURRENCY</strong>
+              <select class="custom-select custom-select-sm border-secondary fs-16 lh-1" name="country">
+                <option value="english">USD$</option>
+                <option value="italian">EUR</option>
+                <option value="spainish">GBP</option>
+                <option value="polish">CAD</option>
+              </select>
+            </div>
+          </div>
         </div>
       </div>
       <div class="py-4 border-top font-weight-bold text-muted font-helvetica">
