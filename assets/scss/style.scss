@@ -58,6 +58,24 @@ h6 {
   }
 }
 
+@media (min-width: 992px) {
+  .container-md {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 960px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1140px) {
+  .container-md {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 1140px;
+    margin: auto;
+  }
+}
+
 // Reduce padding on all columns
 [class^="col"] {
   padding-left: 10px;
