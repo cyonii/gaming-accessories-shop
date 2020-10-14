@@ -1,35 +1,35 @@
 @font-face {
-  font-family: 'Gotham';
+  font-family: "Gotham";
   font-weight: bold;
-  src: url("../fonts/Gotham/Gotham-Bold.otf") format('opentype');
+  src: url("../fonts/Gotham/Gotham-Bold.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'Gotham Round';
+  font-family: "Gotham Round";
   font-weight: lighter;
-  src: url("../fonts/Gotham/GothamRnd-Light.otf") format('opentype');
+  src: url("../fonts/Gotham/GothamRnd-Light.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'Helvetica Neue';
+  font-family: "Helvetica Neue";
   font-weight: bold;
-  src: url("../fonts/Helvetica/HelveticaNeueLTStd-Bd.otf") format('opentype');
+  src: url("../fonts/Helvetica/HelveticaNeueLTStd-Bd.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'Helvetica Neue';
+  font-family: "Helvetica Neue";
   font-weight: 400;
-  src: url("../fonts/Helvetica/HelveticaNeueLTStd-Roman.otf") format('opentype');
+  src: url("../fonts/Helvetica/HelveticaNeueLTStd-Roman.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'Helvetica Neue';
+  font-family: "Helvetica Neue";
   font-weight: lighter;
-  src: url("../fonts/Helvetica/HelveticaNeueLTStd-Th.otf") format('opentype');
+  src: url("../fonts/Helvetica/HelveticaNeueLTStd-Th.otf") format("opentype");
 }
 
 body {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   background: #eee;
 }
 
@@ -46,18 +46,18 @@ body {
 }
 
 .btn-primary {
+  background-color: #d35266;
   color: #fff;
   border-color: #d0465b;
-  background-color: #d35266;
 }
 
 .btn-primary:active,
 .btn-primary:focus,
 .btn-primary:hover {
-  opacity: 0.9;
+  background-color: #d35266;
   color: #fff;
   border-color: #d0465b;
-  background-color: #d35266;
+  opacity: 0.9;
 }
 
 .bg-muted {
@@ -73,18 +73,18 @@ body {
 }
 
 .btn-muted {
+  background-color: #888;
   color: #fff;
   border-color: gray;
-  background-color: #888;
 }
 
 .btn-muted:active,
 .btn-muted:focus,
 .btn-muted:hover {
-  opacity: 0.9;
+  background-color: #888;
   color: #fff;
   border-color: gray;
-  background-color: #888;
+  opacity: 0.9;
 }
 
 .bg-dark {
@@ -100,18 +100,18 @@ body {
 }
 
 .btn-dark {
+  background-color: #383838;
   color: #fff;
   border-color: #303030;
-  background-color: #383838;
 }
 
 .btn-dark:active,
 .btn-dark:focus,
 .btn-dark:hover {
-  opacity: 0.9;
+  background-color: #383838;
   color: #fff;
   border-color: #303030;
-  background-color: #383838;
+  opacity: 0.9;
 }
 
 .lh-1 {
@@ -135,11 +135,11 @@ body {
 }
 
 .font-gotham {
-  font-family: 'Gotham', sans-serif;
+  font-family: "Gotham", sans-serif;
 }
 
 .font-helvetica {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
 }
 
 .border-2 {
@@ -199,30 +199,30 @@ h6 {
 
 .dropdown-item:active,
 .dropdown-item:hover {
-  color: #fff;
   background-color: #383838 !important;
+  color: #fff;
 }
 
 .jumbotron {
   background-image: linear-gradient(135deg, #dd7b8a 40%, #d86678 40%);
 }
 
-.hot-ads a[class^='carousel-control'] {
+.hot-ads a[class^=carousel-control] {
   width: auto;
   padding: 0.75rem;
   border: 2px solid #1e080b;
   border-radius: 50%;
 }
 
-.row.less-gutters [class^='col'] {
-  padding-right: 5px;
+.row.less-gutters [class^=col] {
   padding-left: 5px;
+  padding-right: 5px;
 }
 
 @media (min-width: 768px) {
-  .row.less-gutters [class^='col'] {
-    padding-right: 10px;
+  .row.less-gutters [class^=col] {
     padding-left: 10px;
+    padding-right: 10px;
   }
 }
 

@@ -47,7 +47,7 @@
     &:focus,
     &:hover {
       @include set-background($color);
-      
+
       border-color: darken($color, 3%);
       opacity: 0.9;
     }
