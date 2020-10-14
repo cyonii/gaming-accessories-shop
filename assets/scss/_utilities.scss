@@ -1,5 +1,23 @@
-.lh-1 {
-  line-height: 1;
+// disallow highlighting / selecting
+@mixin user-select-disallowed {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+// set text color based on background
+@function set-text-color($color) {
+  @if (lightness($color) > 70) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+// mixin set background
+@mixin set-background($color) {
+  background-color: $color;
+  color: set-text-color($color);
 }
 
 // color utilities
@@ -19,8 +37,21 @@
   }
 
   .btn-#{$name} {
-    background-color: $color;
+    @include set-background($color);
+    border-color: darken($color, 2%);
+
+    &:active,
+    &:focus,
+    &:hover {
+      @include set-background($color);
+      border-color: darken($color, 2%);
+      opacity: 0.9;
+    }
   }
+}
+
+.lh-1 {
+  line-height: 1;
 }
 
 // font utilities
@@ -66,26 +97,4 @@
   &::-webkit-scrollbar {
     display: none;
   }
-}
-
-// disallow highlighting / selecting
-@mixin user-select-disallowed {
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-// set text color based on background
-@function set-text-color($color) {
-  @if (lightness($color) > 70) {
-    @return #000;
-  } @else {
-    @return #fff;
-  }
-}
-
-// mixin set background
-@mixin set-background($color) {
-  background-color: $color;
-  color: set-text-color($color);
 }

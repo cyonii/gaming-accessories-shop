@@ -20,16 +20,12 @@
 }
 @font-face {
   font-family: "Helvetica Neue";
-  font-weight: thin;
+  font-weight: lighter;
   src: url("../fonts/Helvetica/HelveticaNeueLTStd-Th.otf") format("opentype");
 }
 body {
   font-family: "Helvetica Neue", sans-serif;
   background: #eee;
-}
-
-.lh-1 {
-  line-height: 1;
 }
 
 .bg-primary {
@@ -45,6 +41,14 @@ body {
 
 .btn-primary {
   background-color: #d35266;
+  color: #fff;
+  border-color: #d14a5f;
+}
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: #d35266;
+  color: #fff;
+  border-color: #d14a5f;
+  opacity: 0.9;
 }
 
 .bg-muted {
@@ -60,6 +64,14 @@ body {
 
 .btn-muted {
   background-color: #888;
+  color: #fff;
+  border-color: #838383;
+}
+.btn-muted:active, .btn-muted:focus, .btn-muted:hover {
+  background-color: #888;
+  color: #fff;
+  border-color: #838383;
+  opacity: 0.9;
 }
 
 .bg-dark {
@@ -75,6 +87,18 @@ body {
 
 .btn-dark {
   background-color: #383838;
+  color: #fff;
+  border-color: #333333;
+}
+.btn-dark:active, .btn-dark:focus, .btn-dark:hover {
+  background-color: #383838;
+  color: #fff;
+  border-color: #333333;
+  opacity: 0.9;
+}
+
+.lh-1 {
+  line-height: 1;
 }
 
 .fs-12 {
@@ -118,19 +142,6 @@ body {
 }
 .overflow-x-scroll::-webkit-scrollbar {
   display: none;
-}
-
-.btn-primary {
-  background-color: #d35266;
-  color: #fff;
-  border-color: #d14a5f;
-  border-width: 2px;
-}
-.btn-primary:hover {
-  background-color: #d35266;
-  color: #fff;
-  border-color: #d14a5f;
-  opacity: 0.9;
 }
 
 a {
