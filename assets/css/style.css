@@ -3,26 +3,31 @@
   font-weight: bold;
   src: url("../fonts/Gotham/Gotham-Bold.otf") format("opentype");
 }
+
 @font-face {
   font-family: "Gotham Round";
   font-weight: lighter;
   src: url("../fonts/Gotham/GothamRnd-Light.otf") format("opentype");
 }
+
 @font-face {
   font-family: "Helvetica Neue";
   font-weight: bold;
   src: url("../fonts/Helvetica/HelveticaNeueLTStd-Bd.otf") format("opentype");
 }
+
 @font-face {
   font-family: "Helvetica Neue";
   font-weight: 400;
   src: url("../fonts/Helvetica/HelveticaNeueLTStd-Roman.otf") format("opentype");
 }
+
 @font-face {
   font-family: "Helvetica Neue";
   font-weight: lighter;
   src: url("../fonts/Helvetica/HelveticaNeueLTStd-Th.otf") format("opentype");
 }
+
 body {
   font-family: "Helvetica Neue", sans-serif;
   background: #eee;
@@ -35,6 +40,7 @@ body {
 .text-primary {
   color: #d35266 !important;
 }
+
 .text-primary:hover {
   color: #d35266 !important;
 }
@@ -44,6 +50,7 @@ body {
   color: #fff;
   border-color: #d14a5f;
 }
+
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
   background-color: #d35266;
   color: #fff;
@@ -58,6 +65,7 @@ body {
 .text-muted {
   color: #888 !important;
 }
+
 .text-muted:hover {
   color: #888 !important;
 }
@@ -67,6 +75,7 @@ body {
   color: #fff;
   border-color: #838383;
 }
+
 .btn-muted:active, .btn-muted:focus, .btn-muted:hover {
   background-color: #888;
   color: #fff;
@@ -81,6 +90,7 @@ body {
 .text-dark {
   color: #383838 !important;
 }
+
 .text-dark:hover {
   color: #383838 !important;
 }
@@ -90,6 +100,7 @@ body {
   color: #fff;
   border-color: #333333;
 }
+
 .btn-dark:active, .btn-dark:focus, .btn-dark:hover {
   background-color: #383838;
   color: #fff;
@@ -140,6 +151,7 @@ body {
 .overflow-x-scroll {
   overflow-x: scroll;
 }
+
 .overflow-x-scroll::-webkit-scrollbar {
   display: none;
 }
@@ -147,6 +159,7 @@ body {
 a {
   color: #000;
 }
+
 a:hover {
   text-decoration: none;
 }
@@ -163,9 +176,11 @@ h6 {
 .navbar-brand img {
   width: 160px;
 }
+
 .navbar .nav-item.active .nav-link {
   color: #d35266;
 }
+
 .navbar .user-icon {
   width: 40px;
   height: 40px;
@@ -197,6 +212,7 @@ h6 {
   padding-left: 5px;
   padding-right: 5px;
 }
+
 @media (min-width: 768px) {
   .row.less-gutters [class^=col] {
     padding-left: 10px;
