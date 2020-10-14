@@ -1,3 +1,5 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
 ## Gaming Accessories Shop
 This project is my implementation of the design by [Mohammed Awad](https://www.behance.net/M_Awad), it's my HTML and CSS capstone project at [Microverse](https://github.com/microverseinc).
 
