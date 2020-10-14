@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 ## Gaming Accessories Shop
-This project is my implementation of the design by [Mohammed Awad](https://www.behance.net/M_Awad), it's my HTML and CSS capstone project at [Microverse](https://github.com/microverseinc).
+This project is my implementation of the [design](https://www.behance.net/gallery/24796463/ZATTIX) by [Mohammed Awad](https://www.behance.net/M_Awad), it's my HTML and CSS capstone project at [Microverse](https://github.com/microverseinc).
 
 ![screenshot](assets/images/screenshots/screenshot-homepage.png)
 ![screenshot](assets/images/screenshots/screenshot-search-page.png)
