@@ -9,7 +9,8 @@
 @function set-text-color($color) {
   @if (lightness($color) > 70) {
     @return #000;
-  } @else {
+  }
+  @else {
     @return #fff;
   }
 }
@@ -37,14 +38,16 @@
   }
 
   .btn-#{$name} {
+
     @include set-background($color);
-    border-color: darken($color, 2%);
+    border-color: darken($color, 3%);
 
     &:active,
     &:focus,
     &:hover {
+
       @include set-background($color);
-      border-color: darken($color, 2%);
+      border-color: darken($color, 3%);
       opacity: 0.9;
     }
   }
