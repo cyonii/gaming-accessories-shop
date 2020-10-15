@@ -7,7 +7,7 @@ This project is my implementation of the [design](https://www.behance.net/galler
 ![screenshot](assets/images/screenshots/screenshot-search-page.png)
 
 ### 🔗 Live Demo
-[Live Demo Link](https://raw.githack.com/cyonii/gaming-accessories-shop/working-branch/index.html)
+[Live Demo Link](https://rawcdn.githack.com/cyonii/gaming-accessories-shop/1e5aaea224d06783954904dd5b81d9f992cb2ec1/search.html)
 
 ### ⚒️ BUILT WITH
 - Bootstrap 4
