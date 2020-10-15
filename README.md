@@ -26,7 +26,7 @@ This project is my implementation of the [design](https://www.behance.net/galler
   - Helvetica Neue Bold
 
 ### 🎨 COLORS
-  This are the basic colors used on the project:
+  These are the basic colors used on the project:
   - \#d35266
   - \#888888
   - \#383838
