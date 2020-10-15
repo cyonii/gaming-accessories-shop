@@ -1,0 +1,23 @@
+// disallow highlighting / selecting
+@mixin user-select-disallowed {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+// set text color based on background
+@function set-text-color($color) {
+  @if (lightness($color) > 70) {
+    @return #000;
+  }
+
+  @else {
+    @return #fff;
+  }
+}
+
+// mixin set background
+@mixin set-background($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}

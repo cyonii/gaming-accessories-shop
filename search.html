@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://kit.fontawesome.com/016a3b4736.js"></script>
+  <title>Search Result - Gaming Accessories</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container">
+
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo.png" alt="logo">
+        </a>
+
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav align-items-md-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><i class="fas fa-home mr-1"></i>HOME<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-th-large mr-1"></i>COLLECTION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-shopping-cart mr-1"></i>PURCHASE LIST</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary rounded-2 fs-14" href="#" role="button">
+                <strong>POST AN AD</strong>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav align-items-center ml-auto d-none d-lg-flex">
+            <li class="nav-item mr-1">
+              <a class="nav-link lh-1" href="#"><i class="fas fa-envelope"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                CY Onii
+                <img class="user-icon ml-2" src="assets/images/user.jpeg" alt="User">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Jumbotron hero -->
+  <div class="jumbotron bg-gradient text-center text-white rounded-0 py-5 mb-0">
+    <div class="container">
+      <h1 class="display-s font-weight-bold text-uppercase mb-0">Komrades</h1>
+      <p class="lead mb-1">Search 430,000 in our database waiting to be sold.</p>
+      <form class="form-inline no-gutters justify-content-center mt-5" action="/search.html">
+        <div class="form-group col-12 col-md-3 col-lg-2 my-1">
+          <label class="sr-only" for="categories">Categories</label>
+          <select class="custom-select w-100 fs-16 shadow-sm border-0 rounded-2" id="categories">
+            <option value="" selected>All Categories</option>
+            <option value="audio">Audio</option>
+            <option value="video">Video</option>
+            <option value="ar-vr">AR/VR</option>
+            <option value="cpu">CPU</option>
+            <option value="wearables">Wearables</option>
+          </select>
+        </div>
+
+        <div class="form-group col-12 col-md-4 col-lg-3 my-1 mx-md-1">
+          <label class="sr-only" for="q">Categories</label>
+          <input class="form-control w-100 shadow-sm fs-16 border-0 rounded-2" id="q" type="text" placeholder="What do you search for?">
+        </div>
+
+        <div class="form-group col-12 col-md-4 col-lg-3 my-1">
+          <label class="sr-only" for="location">Location</label>
+          <input class="form-control w-100 shadow-sm fs-16 border-0 rounded-2" id="location" type="text" placeholder="Where?">
+        </div>
+
+        <button class="btn btn-dark my-1 px-5 shadow rounded-2 ml-md-1" type="submit" name="button">Search</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Main block -->
+  <main>
+    <section class="container py-4">
+      <h3 class="text-muted fs-22 sr-only">Search Filter</h3>
+      <div class="row justify-content-between">
+        <div class="col-md-4 col-lg-3">
+          <form class="sticky-top" action="/search.html" method="post">
+            <div class="form-row border-top border-bottom py-3 mb-4">
+              <div class="form-check mr-3">
+                <input class="form-check-input" type="checkbox" value="" id="new">
+                <label class="form-check-label" for="new">
+                  New
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="used">
+                <label class="form-check-label" for="used">
+                  Used
+                </label>
+              </div>
+            </div>
+            <div class="form-row flex-column border-bottom pb-2 mb-3">
+              <h6>Type</h6>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="mobile">
+                  <label class="form-check-label" for="mobile">
+                    Mobile
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="desktop">
+                  <label class="form-check-label" for="desktop">
+                    Desktop
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row flex-column border-bottom pb-2 mb-3">
+              <h6>Brand</h6>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="razer" id="razer">
+                  <label class="form-check-label" for="razer">
+                    Razer
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="logitech" id="logitech">
+                  <label class="form-check-label" for="logitech">
+                    Logitech
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="alienware" id="alienware">
+                  <label class="form-check-label" for="alienware">
+                    Alienware
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row flex-column border-bottom pb-2 mb-3">
+              <h6>Price Range</h6>
+              <div class="col-12">
+                <div class="form-check mb-1">
+                  <input class="form-check-input" type="radio" name="price-range" id="range-1" value="option1" checked>
+                  <label class="form-check-label" for="range-1">
+                    $1 - 100$
+                  </label>
+                </div>
+                <div class="form-check mb-1">
+                  <input class="form-check-input" type="radio" name="price-range" id="range-2" value="option1" checked>
+                  <label class="form-check-label" for="range-2">
+                    $100 - 200$
+                  </label>
+                </div>
+                <div class="form-check mb-1">
+                  <input class="form-check-input" type="radio" name="price-range" id="range-3" value="option1" checked>
+                  <label class="form-check-label" for="range-3">
+                    $200 - 300$
+                  </label>
+                </div>
+                <div class="form-check mb-1">
+                  <input class="form-check-input" type="radio" name="price-range" id="range-4" value="option1" checked>
+                  <label class="form-check-label" for="range-4">
+                    $300 - 400$
+                  </label>
+                </div>
+                <div class="form-check mb-1">
+                  <input class="form-check-input" type="radio" name="price-range" id="range-5" value="option1" checked>
+                  <label class="form-check-label" for="range-5">
+                    $400 - 500$
+                  </label>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="col">
+          <div class="card border-0 rounded-0 mb-3">
+            <div class="row no-gutters">
+              <div class="col-4 col-lg-3">
+                <a href="#"><img class="img-fluid mr-2" src="assets/images/products/mouse-1.jpg" alt="product"></a>
+                <div class="btn-group position-absolute inner-slide">
+                  <button class="inner-slide-control btn btn-dark btn-sm px-3 text-primary" type="button"><i class="fas fa-chevron-left"></i></button>
+                  <button class="inner-slide-control btn btn-dark btn-sm px-3 text-primary" type="button"><i class="fas fa-chevron-right"></i></button>
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="card-body search-result-card mb-3">
+                  <h6 class="mb-0"><a class="text-dark" href="#">Logitech g403 Hero Wired Gaming Mouse</a></h6>
+                  <strong class="text-danger">New</strong>
+                  <p class="mb-2 lh-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmoi ut aliquip ex ea commodo consequat. Duis aute irure.</p>
+                  <p class="mb-1">
+                    <strong>Location:</strong>&nbsp;<a class="text-dark" href="#">San Francisco</a>
+                  </p>
+                  <p class="m-0">23 May, 2020</p>
+
+                  <div class="d-flex justify-content-end align-items-center">
+                    <button class="btn btn-primary rounded-2 give-a-call px-3 lh-1" type="button" name="button">
+                      <strong>Give a call</strong>
+                    </button>
+                    <div class="alert text-white bg-primary rounded-2 ml-2 mb-0 py-2 border-0 px-3 lh-1">
+                      <strong>$450.00</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 rounded-0 mb-3">
+            <div class="row no-gutters">
+              <div class="col-4 col-lg-3">
+                <a href="#"><img class="img-fluid mr-2" src="assets/images/products/keyboard-1.jpg" alt="product"></a>
+                <div class="btn-group position-absolute inner-slide">
+                  <button class="inner-slide-control btn btn-dark btn-sm px-3 text-primary" type="button"><i class="fas fa-chevron-left"></i></button>
+                  <button class="inner-slide-control btn btn-dark btn-sm px-3 text-primary" type="button"><i class="fas fa-chevron-right"></i></button>
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="card-body search-result-card mb-3">
+                  <h6 class="mb-0"><a class="text-dark" href="#">Razer Blackwidow V3 Tenkeyless Mechanical Keyboard</a></h6>
+                  <strong class="text-danger">New</strong>
+                  <p class="mb-2 lh-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmoi ut aliquip ex ea commodo consequat. Duis aute irure.</p>
+                  <p class="mb-1">
+                    <strong>Location:</strong>&nbsp;<a class="text-dark" href="#">San Francisco</a>
+                  </p>
+                  <p class="m-0">23 May, 2020</p>
+
+                  <div class="d-flex justify-content-end align-items-center">
+                    <button class="btn btn-primary rounded-2 give-a-call px-3 lh-1" type="button" name="button">
+                      <strong>Give a call</strong>
+                    </button>
+                    <div class="alert text-white bg-primary rounded-2 ml-2 mb-0 py-2 border-0 px-3 lh-1">
+                      <strong>$450.00</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 rounded-0 mb-3">
+            <div class="row no-gutters">
+              <div class="col-4 col-lg-3">
+                <a href="#"><img class="img-fluid mr-2" src="assets/images/products/headset-1.jpg" alt="product"></a>
+                <div class="btn-group position-absolute inner-slide">
+                  <button class="inner-slide-control btn btn-dark btn-sm px-3 text-primary" type="button"><i class="fas fa-chevron-left"></i></button>
+                  <button class="inner-slide-control btn btn-dark btn-sm px-3 text-primary" type="button"><i class="fas fa-chevron-right"></i></button>
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="card-body search-result-card mb-3">
+                  <h6 class="mb-0"><a class="text-dark" href="#">Kraken Ultimate Gaming Headset - Black</a></h6>
+                  <strong class="text-danger">New</strong>
+                  <p class="mb-2 lh-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmoi ut aliquip ex ea commodo consequat. Duis aute irure.</p>
+                  <p class="mb-1">
+                    <strong>Location:</strong>&nbsp;<a class="text-dark" href="#">San Francisco</a>
+                  </p>
+                  <p class="m-0">23 May, 2020</p>
+
+                  <div class="d-flex justify-content-end align-items-center">
+                    <button class="btn btn-primary rounded-2 give-a-call px-3 lh-1" type="button" name="button">
+                      <strong>Give a call</strong>
+                    </button>
+                    <div class="alert text-white bg-primary rounded-2 ml-2 mb-0 py-2 border-0 px-3 lh-1">
+                      <strong>$450.00</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 rounded-0 mb-3">
+            <div class="row no-gutters">
+              <div class="col-4 col-lg-3">
+                <a href="#"><img class="img-fluid mr-2" src="assets/images/products/earpiece-1.jpg" alt="product"></a>
+                <div class="btn-group position-absolute inner-slide">
+                  <button class="inner-slide-control btn btn-dark btn-sm px-3 text-primary" type="button"><i class="fas fa-chevron-left"></i></button>
+                  <button class="inner-slide-control btn btn-dark btn-sm px-3 text-primary" type="button"><i class="fas fa-chevron-right"></i></button>
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="card-body search-result-card mb-3">
+                  <h6 class="mb-0"><a class="text-dark" href="#">Razer Hammerhead V2 Gaming Eearpiece - RZ12</a></h6>
+                  <strong class="text-danger">New</strong>
+                  <p class="mb-2 lh-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmoi ut aliquip ex ea commodo consequat. Duis aute irure.</p>
+                  <p class="mb-1">
+                    <strong>Location:</strong>&nbsp;<a class="text-dark" href="#">San Francisco</a>
+                  </p>
+                  <p class="m-0">23 May, 2020</p>
+
+                  <div class="d-flex justify-content-end align-items-center">
+                    <button class="btn btn-primary rounded-2 give-a-call px-3 lh-1" type="button" name="button">
+                      <strong>Give a call</strong>
+                    </button>
+                    <div class="alert text-white bg-primary rounded-2 ml-2 mb-0 py-2 border-0 px-3 lh-1">
+                      <strong>$450.00</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 rounded-0 mb-3">
+            <div class="row no-gutters">
+              <div class="col-4 col-lg-3">
+                <a href="#"><img class="img-fluid mr-2" src="assets/images/products/speaker-1.jpg" alt="product"></a>
+                <div class="btn-group position-absolute inner-slide">
+                  <button class="inner-slide-control btn btn-dark btn-sm px-3 text-primary" type="button"><i class="fas fa-chevron-left"></i></button>
+                  <button class="inner-slide-control btn btn-dark btn-sm px-3 text-primary" type="button"><i class="fas fa-chevron-right"></i></button>
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="card-body search-result-card mb-3">
+                  <h6 class="mb-0"><a class="text-dark" href="#">Razer Nommo Chroma - Gaming Speakers</a></h6>
+                  <strong class="text-danger">New</strong>
+                  <p class="mb-2 lh-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmoi ut aliquip ex ea commodo consequat. Duis aute irure.</p>
+                  <p class="mb-1">
+                    <strong>Location:</strong>&nbsp;<a class="text-dark" href="#">San Francisco</a>
+                  </p>
+                  <p class="m-0">23 May, 2020</p>
+
+                  <div class="d-flex justify-content-end align-items-center">
+                    <button class="btn btn-primary rounded-2 give-a-call px-3 lh-1" type="button" name="button">
+                      <strong>Give a call</strong>
+                    </button>
+                    <div class="alert text-white bg-primary rounded-2 ml-2 mb-0 py-2 border-0 px-3 lh-1">
+                      <strong>$450.00</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 rounded-0 mb-3">
+            <div class="row no-gutters">
+              <div class="col-4 col-lg-3">
+                <a href="#"><img class="img-fluid mr-2" src="assets/images/products/speaker-2.jpg" alt="product"></a>
+                <div class="btn-group position-absolute inner-slide">
+                  <button class="inner-slide-control btn btn-dark btn-sm px-3 text-primary" type="button"><i class="fas fa-chevron-left"></i></button>
+                  <button class="inner-slide-control btn btn-dark btn-sm px-3 text-primary" type="button"><i class="fas fa-chevron-right"></i></button>
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="card-body search-result-card mb-3">
+                  <h6 class="mb-0"><a class="text-dark" href="#">Razer Leviathan Mini Bluetooth Speaker</a></h6>
+                  <strong class="text-danger">New</strong>
+                  <p class="mb-2 lh-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmoi ut aliquip ex ea commodo consequat. Duis aute irure.</p>
+                  <p class="mb-1">
+                    <strong>Location:</strong>&nbsp;<a class="text-dark" href="#">San Francisco</a>
+                  </p>
+                  <p class="m-0">23 May, 2020</p>
+
+                  <div class="d-flex justify-content-end align-items-center">
+                    <button class="btn btn-primary rounded-2 give-a-call px-3 lh-1" type="button" name="button">
+                      <strong>Give a call</strong>
+                    </button>
+                    <div class="alert text-white bg-primary rounded-2 ml-2 mb-0 py-2 border-0 px-3 lh-1">
+                      <strong>$450.00</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 rounded-0 mb-3">
+            <div class="row no-gutters">
+              <div class="col-4 col-lg-3">
+                <a href="#"><img class="img-fluid mr-2" src="assets/images/products/headset-2.jpg" alt="product"></a>
+                <div class="btn-group position-absolute inner-slide">
+                  <button class="inner-slide-control btn btn-dark btn-sm px-3 text-primary" type="button"><i class="fas fa-chevron-left"></i></button>
+                  <button class="inner-slide-control btn btn-dark btn-sm px-3 text-primary" type="button"><i class="fas fa-chevron-right"></i></button>
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="card-body search-result-card mb-3">
+                  <h6 class="mb-0"><a class="text-dark" href="#">Razer Tetra Headset - Cardioid Microphone</a></h6>
+                  <strong class="text-danger">New</strong>
+                  <p class="mb-2 lh-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmoi ut aliquip ex ea commodo consequat. Duis aute irure.</p>
+                  <p class="mb-1">
+                    <strong>Location:</strong>&nbsp;<a class="text-dark" href="#">San Francisco</a>
+                  </p>
+                  <p class="m-0">23 May, 2020</p>
+
+                  <div class="d-flex justify-content-end align-items-center">
+                    <button class="btn btn-primary rounded-2 give-a-call px-3 lh-1" type="button" name="button">
+                      <strong>Give a call</strong>
+                    </button>
+                    <div class="alert text-white bg-primary rounded-2 ml-2 mb-0 py-2 border-0 px-3 lh-1">
+                      <strong>$450.00</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <ul class="d-flex justify-content-center pagination pagination-lg">
+            <li class="page-item"><a class="page-link text-dark" href="#">1</a></li>
+            <li class="page-item disabled"><a class="page-link bg-primary text-white" href="#" tabindex="-1">2</a></li>
+            <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+            <li class="page-item"><a class="page-link text-dark" href="#">4</a></li>
+            <li class="page-item"><a class="page-link text-dark" href="#">5</a></li>
+            <li class="page-item"><a class="page-link text-dark" href="#">6</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white border-top border-2 py-5 mt-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4 col-lg-3 mb-3">
+          <img class="footer-img mb-3 d-flex mx-auto" src="assets/images/logo-grey.png" alt="Grey logo">
+          <p class="font-weight-normal text-muted">
+            Komrades Inc. is your number one plug for modern and futuristic gaming accessories for pro and casual gaming.
+            We design, produce, and sell all sorts of gaming equipment and accessories.
+          </p>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 mb-3">
+          <h6 class="text-primary border-bottom border-2 border-primary">
+            CATEGORIES
+          </h6>
+
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-item text-dark" href="#">Laptops</a></li>
+            <li class="nav-item"><a class="nav-item text-dark" href="#">Audio</a></li>
+            <li class="nav-item"><a class="nav-item text-dark" href="#">Monitors</a></li>
+            <li class="nav-item"><a class="nav-item text-dark" href="#">Keyboards</a></li>
+            <li class="nav-item"><a class="nav-item text-dark" href="#">AR/VR</a></li>
+            <li class="nav-item"><a class="nav-item text-dark" href="#">eGPUs</a></li>
+            <li class="nav-item"><a class="nav-item text-dark" href="#">CPU</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 mb-3">
+          <h6 class="text-primary border-bottom border-2 border-primary">
+            NAVIGATION
+          </h6>
+
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-item text-dark" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-item text-dark" href="#">Sign In</a></li>
+            <li class="nav-item"><a class="nav-item text-dark" href="#">Sign Up</a></li>
+            <li class="nav-item"><a class="nav-item text-dark" href="#">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-item text-dark" href="#">Terms & Conditions</a></li>
+            <li class="nav-item"><a class="nav-item text-dark" href="#">Help</a></li>
+            <li class="nav-item"><a class="nav-item text-dark" href="#">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 col-lg-3 mb-3">
+          <div class="font-gotham">
+            <div class="d-flex align-items-center mb-2">
+              <strong class="text-primary mr-3">COUNTRY</strong>
+              <select class="custom-select custom-select-sm border-secondary fs-16 lh-1" name="country">
+                <option value="us">US</option>
+                <option value="canada">Canada</option>
+                <option value="nigeria">Nigeria</option>
+              </select>
+            </div>
+            <div class="d-flex align-items-center mb-2">
+              <strong class="text-primary mr-3">LANGUAGE</strong>
+              <select class="custom-select custom-select-sm border-secondary fs-16 lh-1" name="country">
+                <option value="english">English</option>
+                <option value="italian">Italian</option>
+                <option value="spainish">Spanish</option>
+                <option value="polish">Polish</option>
+              </select>
+            </div>
+            <div class="d-flex align-items-center">
+              <strong class="text-primary mr-3">CURRENCY</strong>
+              <select class="custom-select custom-select-sm border-secondary fs-16 lh-1" name="country">
+                <option value="english">USD$</option>
+                <option value="italian">EUR</option>
+                <option value="spainish">GBP</option>
+                <option value="polish">CAD</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4 mt-md-0">
+        <div class="col-12 col-md-8">
+          <p class="m-0 lh-1">
+            Copyright&copy; 2020 Komrades Inc. All Rights Reserved.
+            Developed by <a href="https://github.com/cyonii" target="_blank" rel="noopener noreferrer"><strong>CY Kalu</strong></a> &bull;
+            Designed by <a href="https://www.behance.net/M_Awad" target="_blank" rel="noopener noreferrer">
+              <strong>Mohammed Awad</strong>
+            </a>
+          </p>
+        </div>
+        <div class="col mt-4 mt-md-0">
+          <ul class="nav float-md-right">
+            <li class="nav-item mr-2"><a class="nav-link text-secondary px-1 py-0 fs-22" href="#"><i class="fab fa-yandex-international"></i></a></li>
+            <li class="nav-item mr-2"><a class="nav-link text-secondary px-1 py-0 fs-22" href="#"><i class="fab fa-google-plus"></i></a></li>
+            <li class="nav-item mr-2"><a class="nav-link text-secondary px-1 py-0 fs-22" href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li class="nav-item"><a class="nav-link text-secondary px-1 py-0 fs-22" href="#"><i class="fab fa-twitter"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
