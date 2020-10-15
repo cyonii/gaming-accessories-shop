@@ -102,13 +102,13 @@ h6 {
   }
 }
 
-.inner-slide-control {
+.inner-slide {
   right: 0;
   bottom: 0;
   border-radius: 1px;
   overflow: hidden;
 
-  & .btn {
+  &-control {
     border-radius: 0 !important;
   }
 }
