@@ -3,31 +3,26 @@
   font-weight: bold;
   src: url("../fonts/Gotham/Gotham-Bold.otf") format("opentype");
 }
-
 @font-face {
   font-family: "Gotham Round";
   font-weight: lighter;
   src: url("../fonts/Gotham/GothamRnd-Light.otf") format("opentype");
 }
-
 @font-face {
   font-family: "Helvetica Neue";
   font-weight: bold;
   src: url("../fonts/Helvetica/HelveticaNeueLTStd-Bd.otf") format("opentype");
 }
-
 @font-face {
   font-family: "Helvetica Neue";
   font-weight: 400;
   src: url("../fonts/Helvetica/HelveticaNeueLTStd-Roman.otf") format("opentype");
 }
-
 @font-face {
   font-family: "Helvetica Neue";
   font-weight: lighter;
   src: url("../fonts/Helvetica/HelveticaNeueLTStd-Th.otf") format("opentype");
 }
-
 body {
   font-family: "Helvetica Neue", sans-serif;
   background: #eee;
@@ -59,16 +54,11 @@ a.text-primary:hover {
   background-color: #d35266;
   border-color: #d35266;
 }
-
-.btn-primary:hover,
-.btn-primary:active,
-.btn-primary:focus {
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
   background-color: #d35266 !important;
   border-color: #d35266 !important;
 }
-
-.btn-primary:active,
-.btn-primary:focus {
+.btn-primary:active, .btn-primary:focus {
   outline-color: #d86678 !important;
   box-shadow: 0 0 0 0.2rem #dd7b8a !important;
 }
@@ -76,10 +66,7 @@ a.text-primary:hover {
 .text-primary {
   color: #d35266 !important;
 }
-
-.text-primary:hover,
-.text-primary:active,
-.text-primaryfocus {
+.text-primary:hover, .text-primary:active, .text-primaryfocus {
   color: #d35266 !important;
 }
 
@@ -98,11 +85,9 @@ a.text-primary:hover {
 .navbar-brand img {
   width: 160px;
 }
-
 .navbar .nav-item.active .nav-link {
   color: #d35266;
 }
-
 .navbar .user-icon {
   width: 40px;
   height: 40px;
@@ -131,7 +116,6 @@ a.text-primary:hover {
   font-size: 22px;
   opacity: 1;
 }
-
 .hot-ads [class^=carousel-control]:hover {
   opacity: 0.6;
 }
@@ -142,7 +126,6 @@ a.text-primary:hover {
   border-radius: 1px;
   overflow: hidden;
 }
-
 .inner-slide-control {
   border-radius: 0 !important;
 }
@@ -170,7 +153,6 @@ a.text-primary:hover {
   padding-left: 5px;
   padding-right: 5px;
 }
-
 @media (min-width: 768px) {
   .row.less-gutters [class^=col] {
     padding-left: 10px;
@@ -181,7 +163,6 @@ a.text-primary:hover {
 .search-result-card .give-a-call {
   display: none;
 }
-
 .search-result-card:hover .give-a-call {
   display: inline-block;
 }
@@ -229,7 +210,6 @@ footer .footer-img {
 .overflow-x-scroll {
   overflow-x: scroll;
 }
-
 .overflow-x-scroll::-webkit-scrollbar {
   display: none;
 }

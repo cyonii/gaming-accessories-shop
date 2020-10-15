@@ -84,7 +84,7 @@ a.text-primary:hover {
   &:active,
   &:focus {
     outline-color: lighten($primary, 5%) !important;
-    box-shadow: 0 0 0 .2rem lighten($primary, 10%) !important;
+    box-shadow: 0 0 0 0.2rem lighten($primary, 10%) !important;
   }
 }
 
@@ -107,7 +107,7 @@ a.text-primary:hover {
 }
 
 .page-link:focus {
-  box-shadow: 0 0 0 .2rem lighten($primary, 10%);
+  box-shadow: 0 0 0 0.2rem lighten($primary, 10%);
 }
 
 .navbar {
