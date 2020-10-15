@@ -49,11 +49,17 @@ h6 {
 }
 
 .hot-ads {
-  a[class^="carousel-control"] {
+  [class^="carousel-control"] {
     width: auto;
     padding: 0.75rem;
-    border: 2px solid darken($color-primary, 50%);
+    border: 2px solid red;
     border-radius: 50%;
+    font-size: 22px;
+    opacity: 1;
+
+    &:hover {
+      opacity: 0.6;
+    }
   }
 }
 
