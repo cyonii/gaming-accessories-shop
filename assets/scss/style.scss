@@ -110,6 +110,36 @@ h6 {
   }
 }
 
+.inner-slide-control {
+  right: 0;
+  bottom: 0;
+  border-radius: 1px;
+  overflow: hidden;
+
+  & .btn {
+    border-radius: 0 !important;
+  }
+}
+
+.category-slide-next,
+.category-slide-prev {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  font-size: 20px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-slide-prev {
+  left: 0;
+}
+
+.category-slide-next {
+  right: 0;
+}
+
 // Reduce padding on all columns
 .row.less-gutters {
   [class^="col"] {
@@ -125,10 +155,12 @@ h6 {
 
 // Products card in search results
 .search-result-card {
-  &:hover {
-    .give-a-call {
-      display: inline-block !important;
-    }
+  .give-a-call {
+    display: none;
+  }
+
+  &:hover .give-a-call {
+    display: inline-block;
   }
 }
 
