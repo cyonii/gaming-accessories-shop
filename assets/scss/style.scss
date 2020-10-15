@@ -10,7 +10,7 @@ $_5: 1.5rem;
 $rounded-edgy: 2px;
 $rounded-sm: $_2;
 
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+// @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "mixins";
 
 @font-face {
@@ -57,6 +57,59 @@ h6 {
   font-weight: bold;
 }
 
+a {
+  color: #000;
+}
+
+a:hover {
+  color: inherit;
+}
+
+a.text-primary:focus,
+a.text-primary:hover {
+  color: $primary !important;
+}
+
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $primary !important;
+    border-color: $primary !important;
+  }
+
+  &:active,
+  &:focus {
+    outline-color: lighten($primary, 5%) !important;
+    box-shadow: 0 0 0 .2rem lighten($primary, 10%) !important;
+  }
+}
+
+.text-primary {
+  color: $primary !important;
+
+  &:hover,
+  &:active,
+  &focus {
+    color: $primary !important;
+  }
+}
+
+.border-primary {
+  border-color: $primary !important;
+}
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+.page-link:focus {
+  box-shadow: 0 0 0 .2rem lighten($primary, 10%);
+}
+
 .navbar {
   &-brand img {
     width: 160px;
@@ -83,7 +136,7 @@ h6 {
   color: #fff;
 }
 
-.jumbotron {
+.bg-gradient {
   background-image: linear-gradient(135deg, lighten($primary, 10%) 40%, lighten($primary, 5%) 40%);
 }
 
@@ -91,7 +144,7 @@ h6 {
   [class^="carousel-control"] {
     width: auto;
     padding: 0.75rem;
-    border: 2px solid red;
+    border: 2px solid $primary;
     border-radius: 50%;
     font-size: 22px;
     opacity: 1;
@@ -138,7 +191,7 @@ h6 {
     padding-left: 5px;
     padding-right: 5px;
 
-    @include media-breakpoint-up(sm) {
+    @media (min-width: 768px) {
       padding-left: 10px;
       padding-right: 10px;
     }
