@@ -1,5 +1,52 @@
-@import "config";
-@import "utilities";
+$primary: #d35266;
+$secondary: #888;
+$dark: #383838;
+
+$_1: 0.25rem;
+$_2: 0.5rem;
+$_3: 0.75rem;
+$_4: 1rem;
+$_5: 1.5rem;
+$rounded-edgy: 2px;
+$rounded-sm: $_2;
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "mixins";
+
+@font-face {
+  font-family: "Gotham";
+  font-weight: bold;
+  src: url("../fonts/Gotham/Gotham-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gotham Round";
+  font-weight: lighter;
+  src: url("../fonts/Gotham/GothamRnd-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-weight: bold;
+  src: url("../fonts/Helvetica/HelveticaNeueLTStd-Bd.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  src: url("../fonts/Helvetica/HelveticaNeueLTStd-Roman.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-weight: lighter;
+  src: url("../fonts/Helvetica/HelveticaNeueLTStd-Th.otf") format("opentype");
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  background: #eee;
+}
 
 a {
   color: #000;
@@ -24,7 +71,7 @@ h6 {
   }
 
   .nav-item.active .nav-link {
-    color: $color-primary;
+    color: $primary;
   }
 
   .user-icon {
@@ -40,12 +87,12 @@ h6 {
 
 .dropdown-item:active,
 .dropdown-item:hover {
-  background-color: $color-dark !important;
+  background-color: $dark !important;
   color: #fff;
 }
 
 .jumbotron {
-  background-image: linear-gradient(135deg, lighten($color-primary, 10%) 40%, lighten($color-primary, 5%) 40%);
+  background-image: linear-gradient(135deg, lighten($primary, 10%) 40%, lighten($primary, 5%) 40%);
 }
 
 .hot-ads {
@@ -69,7 +116,7 @@ h6 {
     padding-left: 5px;
     padding-right: 5px;
 
-    @media (min-width: 768px) {
+    @include media-breakpoint-up(sm) {
       padding-left: 10px;
       padding-right: 10px;
     }
@@ -90,3 +137,5 @@ footer {
     width: 160px;
   }
 }
+
+@import "utilities";

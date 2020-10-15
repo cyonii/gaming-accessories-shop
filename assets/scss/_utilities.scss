@@ -1,59 +1,3 @@
-// disallow highlighting / selecting
-@mixin user-select-disallowed {
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-// set text color based on background
-@function set-text-color($color) {
-  @if (lightness($color) > 70) {
-    @return #000;
-  }
-
-  @else {
-    @return #fff;
-  }
-}
-
-// mixin set background
-@mixin set-background($color) {
-  background-color: $color;
-  color: set-text-color($color);
-}
-
-// color utilities
-@each $name, $color in $color-map {
-  // background color
-  .bg-#{$name} {
-    background-color: $color !important;
-  }
-
-  // text color
-  .text-#{$name} {
-    color: $color !important;
-
-    &:hover {
-      color: $color !important;
-    }
-  }
-
-  .btn-#{$name} {
-    @include set-background($color);
-
-    border-color: darken($color, 3%);
-
-    &:active,
-    &:focus,
-    &:hover {
-      @include set-background($color);
-
-      border-color: darken($color, 3%);
-      opacity: 0.9;
-    }
-  }
-}
-
 .lh-1 {
   line-height: 1;
 }
@@ -85,10 +29,6 @@
 
 .border-2 {
   border-width: 2px !important;
-}
-
-.border-primary {
-  border-color: $color-primary !important;
 }
 
 .rounded-2 {
