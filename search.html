@@ -15,7 +15,7 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
       <div class="container">
 
-        <a class="navbar-brand" href="https://raw.githack.com/cyonii/gaming-accessories-shop/master/index.html">
+        <a class="navbar-brand" href="index.html">
           <img src="assets/images/logo.png" alt="logo">
         </a>
 
@@ -61,7 +61,7 @@
     <div class="container">
       <h1 class="display-s font-weight-bold text-uppercase mb-0">Komrades</h1>
       <p class="lead mb-1">Search 430,000 in our database waiting to be sold.</p>
-      <form class="form-inline no-gutters justify-content-center mt-5" action="https://raw.githack.com/cyonii/gaming-accessories-shop/master/search.html">
+      <form class="form-inline no-gutters justify-content-center mt-5" action="search.html">
         <div class="form-group col-12 col-md-3 col-lg-2 my-1">
           <label class="sr-only" for="categories">Categories</label>
           <select class="custom-select w-100 fs-16 shadow-sm border-0 rounded-2" id="categories">
@@ -465,35 +465,49 @@
           </ul>
         </div>
 
-        <div class="col-md-4 col-lg-3 mb-3">
-          <div class="font-gotham">
-            <div class="d-flex align-items-center mb-2">
-              <strong class="text-primary mr-3">COUNTRY</strong>
-              <select class="custom-select custom-select-sm border-secondary fs-16 lh-1" name="country">
-                <option value="us">US</option>
-                <option value="canada">Canada</option>
-                <option value="nigeria">Nigeria</option>
-              </select>
+        <div class="col-12 col-lg-3 mb-3">
+          <form>
+            <div class="form-row">
+              <div class="col-md-4 col-lg-12 mb-2">
+                <div class="row no-gutters">
+                  <label class="col-auto col-form-label mr-3 text-primary font-weight-bold mb-0" for="country">COUNTRY</label>
+                  <div class="col">
+                    <select class="custom-select custom-select-sm border-secondary rounded-2 fs-16" name="country" id="country">
+                      <option value="us">US</option>
+                      <option value="canada">Canada</option>
+                      <option value="nigeria">Nigeria</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-12 mb-2 mb-2">
+                <div class="row no-gutters">
+                  <label class="col-auto col-form-label mr-3 text-primary font-weight-bold mb-0" for="language">LANGUAGE</label>
+                  <div class="col">
+                    <select class="custom-select custom-select-sm border-secondary rounded-2 fs-16" name="language" id="language">
+                      <option value="english">English</option>
+                      <option value="italian">Italian</option>
+                      <option value="spainish">Spanish</option>
+                      <option value="polish">Polish</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-12 mb-2 mb-2">
+                <div class="row no-gutters">
+                  <label class="col-auto col-form-label mr-3 text-primary font-weight-bold mb-0" for="currency">CURRENCY</label>
+                  <div class="col">
+                    <select class="custom-select custom-select-sm border-secondary rounded-2 fs-16" name="currency" id="currency">
+                      <option value="english">USD$</option>
+                      <option value="italian">EUR</option>
+                      <option value="spainish">GBP</option>
+                      <option value="polish">CAD</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="d-flex align-items-center mb-2">
-              <strong class="text-primary mr-3">LANGUAGE</strong>
-              <select class="custom-select custom-select-sm border-secondary fs-16 lh-1" name="country">
-                <option value="english">English</option>
-                <option value="italian">Italian</option>
-                <option value="spainish">Spanish</option>
-                <option value="polish">Polish</option>
-              </select>
-            </div>
-            <div class="d-flex align-items-center">
-              <strong class="text-primary mr-3">CURRENCY</strong>
-              <select class="custom-select custom-select-sm border-secondary fs-16 lh-1" name="country">
-                <option value="english">USD$</option>
-                <option value="italian">EUR</option>
-                <option value="spainish">GBP</option>
-                <option value="polish">CAD</option>
-              </select>
-            </div>
-          </div>
+          </form>
         </div>
       </div>
       <div class="row mt-4 mt-md-0">
